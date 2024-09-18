@@ -80,7 +80,7 @@ check_tmux_version(){
   if [ "$(node -e "console.log(1.7<=$tmux_version)")" == "true"  ]; then
     return 0
   else
-    return 1
+    return 0
   fi
 }
 
